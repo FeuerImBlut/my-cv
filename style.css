@@ -96,18 +96,13 @@ p {
 	height: 100%;
 	background-color: var(--bg-color-right);
 	box-sizing: border-box;
-	padding: 5% 10%;
+	padding: 3% 3%;
 }
 
 .right-side p,
 .right-side h2,
 .right-side h3 {
 	color: var(--text-color-right);
-}
-
-.right-side h2 {
-	display: block;
-	background-color: var(--back-color-right);
 }
 
 .right-side h2,
@@ -118,9 +113,12 @@ p {
 }
 
 .right-side h2 {
-	margin: 15px 0 8px;
+	display: block;
+	background-color: var(--back-color-right);
+	margin: 15px 0px 8px;
 	font-size: 28px;
 	padding: 0 10px;
+	font-size: 1.3em;
 }
 
 .right-side h3 {
@@ -140,7 +138,7 @@ p {
 
 .right-side p,
 .right-side li {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 110%;
 	word-spacing: 2px;
 	font-family: 'Monseratt-l';
@@ -189,6 +187,31 @@ p {
 
 .location::before {
 	background-image: url(./pictures/location.png);
+}
+
+.edu-years {
+	font-size: 0.7em;
+	font-style: oblique;
+}
+
+.edu-univercity {
+	font-family: "Monseratt-l";
+	font-size: 0.9em;
+	text-decoration: underline;
+}
+
+.skills {
+	letter-spacing: 0.1px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.skills > li {
+	padding: 5px;
+	color: var(--bg-color-left);
+	background-color: var(--back-color-right);
+	border-radius: 5px;
 }
 
 
