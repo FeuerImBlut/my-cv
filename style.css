@@ -15,7 +15,6 @@ body {
 	margin: auto;
 	height: 100vh;
 	aspect-ratio: 0.7;
-	border: 2px blue solid;
 }
 
 main {
@@ -123,17 +122,18 @@ p {
 
 .right-side h3 {
 	margin: 15px 0 5px;
-	font-size: 26px;
+	font-size: 1em;
 }
 
 .right-side h4 {
-	font-size: 20px;
+	font-size: 1.2em;
 	margin: 5px 0;
 }
 
 .right-side h5 {
-	font-size: 18px;
+	/* font-size: 1em; */
 	margin: 5px 0;
+	text-decoration: underline;
 }
 
 .right-side p,
@@ -156,17 +156,21 @@ p {
 .social>li {
 	position: relative;
 	font-size: 0.7em;
-	margin: 0.1em 0;
+	/* margin: 0.5em 0 0 0; */
+	margin-left: 1em;
 }
 
 .social>li::before {
 	content: '';
 	display: block;
 	position: absolute;
-	left: -1em;
+	left: -1.2em;
+	top: 0.4em;
 	width: 1em;
 	height: 1em;
 	background-size: contain;
+	background-repeat: no-repeat;
+	filter: invert(98%) sepia(2%) saturate(1213%) hue-rotate(173deg) brightness(93%) contrast(88%);
 }
 
 .linkedin::before {
@@ -204,15 +208,50 @@ p {
 	letter-spacing: 0.1px;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 10px;
 }
 
-.skills > li {
+.skills>li {
+	font-size: 0.8em;
 	padding: 5px;
 	color: var(--bg-color-left);
 	background-color: var(--back-color-right);
 	border-radius: 5px;
 }
+
+h4.work-years {
+	font-size: 0.9em;
+	font-style: oblique;
+}
+
+.activity>li::marker {
+	margin: 0;
+}
+
+.activity {
+	list-style-position: inside;
+}
+
+.activity li {
+
+}
+
+.tech, .tools {
+	font-size: 0.9em;
+}
+
+a {
+	display: block;
+	font-size: inherit;
+	text-decoration: none;
+	color: inherit;
+	}
+
+	a:visited {
+		text-decoration: none;
+		color: inherit;
+	}
+
 
 
 
